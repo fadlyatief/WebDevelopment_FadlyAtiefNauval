@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital@0;1&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+:root {
+    --color-ungu: #e7e7e7;
+    --bg-dark: #12111e;
+    --bg-card: #1c1b2e;
+    --bg-input: #23213a;
+    --border-color: #2e2b45;
+    --text-primary: #ffffff;
+    --text-secondary: #a0a0c0;
+}
+
+.navbar {
+    background-color: #1c1b2e;
+    color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    padding: 10px 0;
+    height: 7vh;
+    box-sizing: content-box;
+    border-bottom: 1px solid #2e2b45;
+}
+
+.solid-button-purple {
+    background-color: transparent;
+    color: rgb(245, 235, 255);
+    border: 2px solid #a78bfa;
+    border-radius: 25px;
+    font-weight: 700;
+    width: 150px;
+    padding: 10px 0 10px 0;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 15px;
+    transition: .3s ease-in-out;
+    cursor: pointer;
+}
+
+.solid-button-purple:hover {
+    background-color: #a78bfa;
+    color: #1c1b2e;
+}
+
+.transparent-button {
+    color: #ffffff;
+    background-color: transparent;
+    border: 2px solid transparent;
+    border-radius: 25px;
+    font-weight: 700;
+    padding: 10px 0 10px 0;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.navbar-brand {
+    display: flex;
+    justify-content: flex-start;
+    gap: 15px;
+    align-items: center;
+    font-weight: 800;
+    margin: 0px 10px;
+    color: #ffffff;
+}
+
+.brand-logo {
+    height: 45px;
+}
+
+.brand-title {
+    font-size: 20px;
+    color: white;
+    margin: 0;
+}
+
+.input-lightgray {
+    padding: 12px 20px;
+    border-radius: 10px;
+    background-color: #23213a;
+    border: 1px solid #2e2b45;
+    outline: none;
+    color: #ffffff;
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 14px;
+    transition: border-color 0.2s;
+}
+
+.input-lightgray::placeholder {
+    color: #5a587a;
+}
+
+.input-lightgray:focus {
+    border-color: #a78bfa;
+}
+
+.form-transparent-button {
+    color: #ffffff;
+    background: linear-gradient(0deg, rgba(27, 26, 43, 1) 20%, rgba(43, 38, 61, 0.9) 100%);
+    border-radius: 10px;
+    border: 1px solid #2e2b45;
+    border-bottom: 3px solid #4a3f8a;
+    font-weight: 800;
+    padding: 18px 20px;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 16px;
+    width: 100%;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+    transition: 0.3s ease-out;
+    margin: 8px 0;
+    cursor: pointer;
+}
+
+.form-transparent-button:hover {
+    transform: translateY(-4px);
+    border-color: #a78bfa;
+    background: linear-gradient(0deg, rgb(40, 38, 70) 20%, rgb(55, 50, 85) 100%);
+}
+
+/* Submit / Register button style */
+button[type="submit"],
+#register-button,
+#submit-login-button {
+    background-color: #2e2b45;
+    color: #ffffff;
+    border: none;
+    border-radius: 10px;
+    font-weight: 700;
+    padding: 14px 0;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 15px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    width: 100%;
+}
+
+button[type="submit"]:hover,
+#register-button:hover,
+#submit-login-button:hover {
+    background-color: #3d3966;
+}
+
+.button-cont h1 {
+    color: white;
+    font-family: "Poppins";
+    font-size: 40px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.button-cont h1::before {
+    content: '';
+    display: inline-block;
+    width: 10px;
+    height: 45px;
+    background: linear-gradient(180deg, #a78bfa, #f87171);
+    border-radius: 10px;
+}

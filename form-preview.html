@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>DUMMYForm | Preview</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/formstyle.css">
+    <link rel="stylesheet" href="css/previewstyle.css">
+</head>
+
+<body>
+    <div id="navbar-root"></div>
+
+    <div class="preview-mainpage">
+        <div id="preview-loading" class="preview-state">
+            <p>Loading form...</p>
+        </div>
+
+        <!-- Error -->
+        <div id="preview-error" class="preview-state" style="display:none;">
+            <p>Form not found.</p>
+            <a href="form.html">← Back to your forms</a>
+        </div>
+
+        <div id="preview-content" class="preview-card" style="display:none;">
+            <div class="preview-header">
+                <div>
+                    <h1 id="preview-title">Form Title</h1>
+                    <p id="preview-meta" class="preview-meta"></p>
+                </div>
+                <a href="" id="back-link">←</a>
+            </div>
+            <hr class="preview-divider">
+            <div id="preview-questions">
+            </div>
+        </div>
+
+    </div>
+    <footer class="footer">:3</footer>
+
+    <script src="js/components/components.js"></script>
+    <script src="js/formpreviewscript.js"></script>
+</body>
+
+</html>
